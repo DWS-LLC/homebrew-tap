@@ -10,7 +10,7 @@ cask "gct" do
   # The app updates itself from GitHub releases; keep brew out of its way.
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Grand Central Terminal.app"
 
