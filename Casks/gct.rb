@@ -1,6 +1,6 @@
 cask "gct" do
-  version "0.5.0"
-  sha256 "d4c6dcbd3eac1de2daa50d17e99c878d28f21824fc1ca87bf64d28e3771effe2"
+  version "0.6.0"
+  sha256 "dea6fadea303dd7e6559092c999306deda8dbde036e4def63a4f692b69bff9e1"
 
   url "https://github.com/DWS-LLC/grandcentralterminal/releases/download/v#{version}/GrandCentralTerminal-#{version}-macos-arm64.zip"
   name "Grand Central Terminal"
