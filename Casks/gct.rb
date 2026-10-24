@@ -1,14 +1,13 @@
 cask "gct" do
-  version "0.7.0"
-  sha256 "5b7f459ffbd0028b1c6066e957137b4e934958e1a6ea6fd0538b046e077682c9"
+  version "0.8.0"
+  sha256 "b08e71ca61e95881da15911c9d6f680ad0a26fe7b05f8aadf17e3c43b8f9de1d"
 
   url "https://github.com/DWS-LLC/grandcentralterminal/releases/download/v#{version}/GrandCentralTerminal-#{version}-macos-arm64.zip"
   name "Grand Central Terminal"
   desc "Infinite-canvas terminal with a persistent daemon"
   homepage "https://github.com/DWS-LLC/grandcentralterminal"
 
-  # The app updates itself from GitHub releases; keep brew out of its way.
-  auto_updates true
+  # Brew installs don't self-update; the app points users at brew upgrade.
   depends_on arch: :arm64
   depends_on macos: :sonoma
 
